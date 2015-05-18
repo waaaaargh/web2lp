@@ -1,0 +1,25 @@
+{% include "layout.html" %}
+
+{% block content %}
+
+  {% if not error %}
+
+    <h2>Jo, hat geklappt.</h2>
+
+    <p>Von hier sieht es so aus, als ob der Druck erfolgreich war.</p>
+
+    <p><a href="/">[zur&uuml;ck]</a></p>
+
+  {% else %}
+
+    <h2>Das hat jetzt nicht ganz so gut funktioniert</h2>
+
+    <p>Command: <pre>{{ cmd }}</pre><p>
+
+    <p>Output: <pre>{{ output }}</pre></p>
+
+    <p><a href="/">[zur&uuml;ck]</a></p>
+
+  {% endif %}
+
+{% endblock %}

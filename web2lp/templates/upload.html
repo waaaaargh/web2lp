@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>web2lp</title>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body id="home">
+
+	<h1>web2lp</h1>
+
+        <form action="" method="POST" enctype="multipart/form-data">
+
+          {% for field in form %}
+
+            {{ field }}
+
+          {% endfor %}
+
+          <button type="submit">Submit</button>
+
+        </form>
+
+</body>
+</html>
